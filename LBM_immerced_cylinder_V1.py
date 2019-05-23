@@ -141,7 +141,7 @@ for counter in range(nsteps):
 
     # Zou He at Inlet and Outlet
     #==================================================================
-    x=0    # Inlet. (At inlet there will be a x velocity applied that corresponds to the analytical value.)
+    x=0    # Inlet. (At inlet there will be an x velocity applied that corresponds to the analytical value.)
 
     ux[x,:]= ux_analy[1:ny+1].T
     uy[x,:]= 0
