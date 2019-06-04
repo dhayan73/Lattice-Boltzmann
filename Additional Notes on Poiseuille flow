@@ -1,0 +1,12 @@
+The laminar- turbulance region for within a pipe is said to be;
+
+Re < ~2000 laminar
+Re > 2000 turbulent.
+
+The entrance length (Lh) for fully developed flow;
+
+(Lh/D) = 0.05*Re (for laminar flow).
+
+for the Poisuille flow profile with Bounce-back example the fully developed flow was estimated to 
+occur at a time step 10 times less than on the actual run (eg: estimated for 85th timestep, but occurs
+close to the 850 timestep). This would need to be further understood.
