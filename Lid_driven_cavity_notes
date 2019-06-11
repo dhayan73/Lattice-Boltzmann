@@ -10,7 +10,7 @@ Additional Notes on Simulating Lid driven cavity (LDC) using Lattice Boltzmann m
   if the parameters are set to exceed the other end, the simulation time increases (due to corresponding grid size increment).
 
 - The Lid-Driven cavity results were compared (As seen in images), for higher reynolds numbers the vorticity pattern is more defined 
-  than for lower Re numbers.
+  than for lower Re numbers. This seems to be a reasonable observation, but does not answer if the results are accurate.
   
 Further work: 
 -Analytical verification of the results needed. (required to go through the theory in detail and provide a comparison)
