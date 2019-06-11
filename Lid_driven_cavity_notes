@@ -1,0 +1,18 @@
+Additional Notes on Simulating Lid driven cavity (LDC) using Lattice Boltzmann methods.
+
+- A comaprative study was done for Re 1000 and 400.
+- Lattice model parameters (velocity, pressure, density etc..) are all scaled to achieve the required Reynolds numbers.
+- Simulating LDC at higher Reynolds numbers using Bounce-back BCs (Vs Zou-He) proved to be more stable.
+- Due to this reason running models using ZouHe for the same time was not possible as the simulation time increased significantly.
+- To achieve stability it seems that it necessary to keep the flow speed < 0.33 (Scaled Mach number).
+- The viscosity is another parameter that may be tweaked by adjusting the relaxation time.
+- However these parameters are limited as when the prescribed limits are exceeded on one end the simulations loose stability, while 
+  if the parameters are set to exceed the other end, the simulation time increases (due to corresponding grid size increment).
+
+- The Lid-Driven cavity results were compared (As seen in images), for higher reynolds numbers the vorticity pattern is more defined 
+  than for lower Re numbers.
+  
+Further work: 
+-Analytical verification of the results needed. (required to go through the theory in detail and provide a comparison)
+-C++ simulations will need to be considered to get over simulation time issues. (Limited personal experience suggests Python simulations are 
+ reasonable for lattice size of 200x200 or less for D2Q9 models).
