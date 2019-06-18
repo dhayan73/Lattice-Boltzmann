@@ -125,7 +125,7 @@ for counter in range(nsteps):
     #==================================================================
     # At the top. (for lid driven cavity flow top face will have a tagential flow applied to it.)
 
-    ux[top_fluid_boundary]= u_analy # there seems to be an effect from the direction of velocity.
+    ux[top_fluid_boundary]= u_analy 
     uy[top_fluid_boundary]= 0
     rho[top_fluid_boundary]=ux[top_fluid_boundary]+(f2[0][top_fluid_boundary]+f2[2][top_fluid_boundary]+f2[4][top_fluid_boundary] + 2*(f2[3][top_fluid_boundary]+f2[6][top_fluid_boundary]+f2[7][top_fluid_boundary]))
 
