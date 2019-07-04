@@ -6,7 +6,11 @@ Created on Thu Jul  4 16:50:17 2019
 """
 
 # Lattice Boltzmann for immerced rigid cylinder. D2Q9 model.
-# **Uses Guo's forcing term
+# **Uses Guo's forcing term (Needs further clarifycation), force on fluid is interpolated from the particle
+# using a simple bi-linear interpolation. The surrounding fluid velocity is interpolated back onto the particle
+# nodes to update the position and calculate the deformation and hence force on particle.
+# This code uses simple hookes law (F=kx) type force model on particle. More sophisticated models maybe used 
+# depending on the problem.
 # The flow is periodic (generally along the x-axis)
 # for this example a rigid cylinder is positioned in the flow.
 
